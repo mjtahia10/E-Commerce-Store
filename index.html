@@ -58,9 +58,9 @@
           <!-- Banner -->
           <div class="flex flex-col-reverse lg:flex-row justify-center items-center py-10 gap-8">
             <div class="flex flex-col items-center justify-center gap-6">
-              <h3 class="text-2xl lg:text-3xl font-medium uppercase">Online Mart</h3>
-              <h1 class="text-4xl md:text-6xl font-extrabold font-serif tracking-wider leading-tight md:leading-[90px] max-w-2xl text-center lg:text-left mb-5">Shop for TK 500 or more and enjoy a  <span class="text-[#E527B2]">15% discount on your purchase!</span></h1>
-              <p class="text-lg font-medium">Use Promo Code <span class="px-5 py-3 bg-[#E527B2] text-white rounded-lg ml-5" id="discount-coupon">SELL200</span></p>
+              <h3 class="text-2xl lg:text-3xl font-medium uppercase">E-Commerce Store</h3>
+              <h1 class="text-4xl md:text-6xl font-extrabold font-serif tracking-wider leading-tight md:leading-[90px] max-w-2xl text-center lg:text-left mb-5">Shop for TK 5000 or more and enjoy a  <span class="text-[#e52727]">40% discount on your purchase!</span></h1>
+              <p class="text-lg font-medium">Use Promo Code <span class="px-5 py-3 bg-[#e52727] text-white rounded-lg ml-5" id="discount-coupon">SELL200</span></p>
             </div>
             <div>
               <img src="image/banner.png" alt="">
@@ -70,14 +70,14 @@
     <main class="bg-[#F8F8F8] flex flex-col xl:flex-row justify-center items-center xl:items-start gap-2 lg:gap-12 py-12 lg:py-24">
         <!-- Product Part -->
         <div class="flex flex-col gap-14 lg:gap-20">
-          <!-- Kitchenware -->
+          <!-- Electronics -->
           <div>
-            <h3 class="text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-10 font-serif">Kitchenware</h3>
+            <h3 class="text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-10 font-serif">Electronics</h3>
             <div class="flex flex-col lg:flex-row gap-10 lg:gap-6">
-              <!-- Kitchen Card 1 -->
+              <!-- Electronic Card 1 -->
               <div class="card w-80 bg-base-100 shadow-xl flex flex-col items-center p-6">
                <div class="w-full h-52 bg-[#1111110D] rounded-lg flex flex-col items-center justify-center p-8"> 
-                <img src="image/kitchen-1.png" alt=""/>
+                <img src="SmartPhone Pro Max.jpg" alt=""/>
               </div>
                 <div class="card-body flex flex-col items-center gap-4">
                   <div class="rating">
@@ -87,15 +87,15 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                   </div>
-                  <h2 class="card-title" id="k-accessories">Kitchen Accessories</h2>
-                  <p class="text-gray-400 text-lg"><span id="k-accessories-price">39.00</span> TK</p>
-                  <button id="kitchen-card-one" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold">Buy Now</button>
+                  <h2 class="card-title" id="k-accessories">Smartphone Pro Max</h2>
+                  <p class="text-gray-400 text-lg"><span id="k-accessories-price"> BDT 45,000</span> TK</p>
+                  <button id="kitchen-card-one" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold" onclick="AddItem('Smartphone Pro Max', 45000 )">Buy Now</button>
                 </div>
               </div>
-              <!-- Kitchen Card 2 -->
+              <!-- Electronic Card 2 -->
               <div class="card w-80 bg-base-100 shadow-xl flex flex-col items-center p-6">
                 <div class="w-full h-52 bg-[#1111110D] rounded-lg flex flex-col items-center justify-center p-8"> 
-                 <img src="image/kitchen-2.png" alt=""/>
+                 <img src="4K Ultra HD Smart TV (43-inch).jpg" alt=""/>
                </div>
                  <div class="card-body flex flex-col items-center gap-4">
                    <div class="rating">
@@ -105,15 +105,15 @@
                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                    </div>
-                   <h2 class="card-title" id="ruti-maker">Ruti Maker</h2>
-                   <p class="text-gray-400 text-lg" id="ruti-maker-price"><span>25.00</span> TK</p>
-                   <button id="kitchen-card-two" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold">Buy Now</button>
+                   <h2 class="card-title" id="ruti-maker">4K Ultra HD Smart TV (43-inch)</h2>
+                   <p class="text-gray-400 text-lg" id="ruti-maker-price"><span>BDT 35,000</span> TK</p>
+                   <button id="kitchen-card-two" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold" onclick="AddItem('4K Ultra HD Smart TV (43-inch)', 35000 )">Buy Now</button>
                  </div>
                </div>
-               <!-- Kitchen Card 3 -->
+               <!-- Electronic Card 3 -->
                <div class="card w-80 bg-base-100 shadow-xl flex flex-col items-center p-6">
                 <div class="w-full h-52 bg-[#1111110D] rounded-lg flex flex-col items-center justify-center p-8"> 
-                 <img src="image/kitchen-3.png" alt=""/>
+                 <img src="Gaming Laptop.jpg" alt=""/>
                </div>
                  <div class="card-body flex flex-col items-center gap-4">
                    <div class="rating">
@@ -123,21 +123,21 @@
                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                    </div>
-                   <h2 class="card-title" id="home-cooker">Home Cooker</h2>
-                   <p class="text-gray-400 text-lg" id="home-cooker-price"><span>49.00</span> TK</p>
-                   <button id="kitchen-card-three" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold">Buy Now</button>
+                   <h2 class="card-title" id="home-cooker">Gaming Laptop RTX Edition</h2>
+                   <p class="text-gray-400 text-lg" id="home-cooker-price"><span>BDT 95,000</span> TK</p>
+                   <button id="kitchen-card-three" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold" onclick="AddItem('Gaming Laptop RTX Edition', 95000)">Buy Now</button>
                  </div>
                </div>
             </div>
           </div>
-          <!-- Sportswear-->
+          <!-- Faashion-->
           <div>
-            <h3 class="text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-10 font-serif">Sportswear</h3>
+            <h3 class="text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-10 font-serif">Fashion</h3>
             <div class="flex flex-col lg:flex-row gap-10 lg:gap-6">
-              <!-- Sport Card 1 -->
+              <!-- Fashion Card 1 -->
               <div class="card w-80 bg-base-100 shadow-xl flex flex-col items-center p-6">
                 <div class="w-full h-52 bg-[#1111110D] rounded-lg flex flex-col items-center justify-center p-8"> 
-                <img src="image/sports-1.png" alt=""/>
+                <img src="Slim Fit Blue Jeans.jpg" alt=""/>
               </div>
                 <div class="card-body flex flex-col items-center gap-4">
                   <div class="rating">
@@ -147,15 +147,15 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                   </div>
-                  <h2 class="card-title" id="sport-cap">Sports Back Cap</h2>
-                  <p class="text-gray-400 text-lg" id="sport-cap-price"><span>49.00</span> TK</p>
-                  <button id="sport-card-one" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold">Buy Now</button>
+                  <h2 class="card-title" id="sport-cap">Slim Fit Blue Jeans </h2>
+                  <p class="text-gray-400 text-lg" id="sport-cap-price"><span>BDT 2,000</span> TK</p>
+                  <button id="sport-card-one" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold" onclick="AddItem('Slim Fit Blue Jeans', 2000 )">Buy Now</button>
                 </div>
               </div>
-              <!--  Sport  Card 2 -->
+              <!--  Fashion Card 2 -->
               <div class="card w-80 bg-base-100 shadow-xl flex flex-col items-center p-6">
                 <div class="w-full h-52 bg-[#1111110D] rounded-lg flex flex-col items-center justify-center p-8"> 
-                  <img src="image/sports-2.png" alt=""/>
+                  <img src="Comfortable Running Shoes.jpg" alt=""/>
                 </div>
                   <div class="card-body flex flex-col items-center gap-4">
                     <div class="rating">
@@ -165,15 +165,15 @@
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                     </div>
-                    <h2 class="card-title" id="jersey-set">Full Jersey Set</h2>
-                    <p class="text-gray-400 text-lg" id="jersey-set-price"><span>69.00</span> TK</p>
-                    <button id="sport-card-two" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold">Buy Now</button>
+                    <h2 class="card-title" id="jersey-set">Comfortable Running Shoes</h2>
+                    <p class="text-gray-400 text-lg" id="jersey-set-price"><span>BDT 3,000</span> TK</p>
+                    <button id="sport-card-two" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold" onclick="AddItem('Comfortable Running Shoes', 3000)">Buy Now</button>
                   </div>
                 </div>
-                <!--  Sport Card 3 -->
+                <!--  Fashion Card 3 -->
                 <div class="card w-80 bg-base-100 shadow-xl flex flex-col items-center p-6">
                 <div class="w-full h-52 bg-[#1111110D] rounded-lg flex flex-col items-center justify-center p-8"> 
-                  <img src="image/sports-3.png" alt=""/>
+                  <img src="Luxury Leather Wallet (Men’s).jpg" alt=""/>
                 </div>
                   <div class="card-body flex flex-col items-center gap-4">
                     <div class="rating">
@@ -183,21 +183,21 @@
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                     </div>
-                    <h2 class="card-title" id="sport-cates">Sports Cates</h2>
-                    <p class="text-gray-400 text-lg" id="sport-cates-price"><span>159.00</span> TK</p>
-                    <button id="sport-card-three" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold">Buy Now</button>
+                    <h2 class="card-title" id="sport-cates">Luxury Leather Wallet (Men’s)</h2>
+                    <p class="text-gray-400 text-lg" id="sport-cates-price"><span>BDT 2,200</span> TK</p>
+                    <button id="sport-card-three" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold" onclick="AddItem('Luxury Leather Wallet (Men’s)', 2200)">Buy Now</button>
                   </div>
                 </div>
             </div>
           </div>
-          <!-- Furniture -->
+          <!-- Sports And Outdoors -->
           <div>
-            <h3 class="text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-10 font-serif">Furniture</h3>
+            <h3 class="text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-10 font-serif">Sports & Outdoors</h3>
             <div class="flex flex-col lg:flex-row gap-10 lg:gap-8">
-              <!-- Furniture Card 1 -->
+              <!-- Sports And Outdoor Card 1 -->
               <div class="card w-80 bg-base-100 shadow-xl flex flex-col items-center p-6" >
                 <div class="w-full h-52 bg-[#1111110D] rounded-lg flex flex-col items-center justify-center p-8"> 
-                <img src="image/furniture-1.png" alt=""/>
+                <img src="FootBall Training Set.jpg" alt=""/>
               </div>
                 <div class="card-body flex flex-col items-center gap-4">
                   <div class="rating">
@@ -207,15 +207,15 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                   </div>
-                  <h2 class="card-title" id="single-relax-chair">Single Relax Chair</h2>
-                  <p class="text-gray-400 text-lg" id="single-relax-chair-price"><span>185.00</span> TK</p>
-                  <button id="furniture-card-one" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold">Buy Now</button>
+                  <h2 class="card-title" id="single-relax-chair">Football Training Set </h2>
+                  <p class="text-gray-400 text-lg" id="single-relax-chair-price"><span> BDT 1,500</span> TK</p>
+                  <button id="furniture-card-one" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold" onclick="AddItem('Football Training Set', 1500)">Buy Now</button>
                 </div>
               </div>
-              <!-- Furniture Card 2 -->
+              <!-- Sport And Outdoor Card 2 -->
               <div class="card w-80 bg-base-100 shadow-xl flex flex-col items-center p-6">
                 <div class="w-full h-52 bg-[#1111110D] rounded-lg flex flex-col items-center justify-center p-8"> 
-                  <img src="image/furniture-2.png" alt=""/>
+                  <img src="Portable Bluetooth Speaker.jpg" alt=""/>
                 </div>
                   <div class="card-body flex flex-col items-center gap-4">
                     <div class="rating">
@@ -225,15 +225,15 @@
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
                     </div>
-                    <h2 class="card-title" id="children-chair">Children Chair</h2>
-                    <p class="text-gray-400 text-lg" id="children-chair-price"><span>299.00</span> TK</p>
-                    <button id="furniture-card-two" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold">Buy Now</button>
+                    <h2 class="card-title" id="children-chair">Portable Bluetooth Speaker</h2>
+                    <p class="text-gray-400 text-lg" id="children-chair-price"><span>BDT 2,500</span> TK</p>
+                    <button id="furniture-card-two" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold" onclick="AddItem('Portable Bluetooth Speaker', 2500)">Buy Now</button>
                   </div>
                 </div>
-                <!-- Furniture Card 3 -->
+                <!-- Sports And Outdoor Card 3 -->
                 <div class="card w-80 bg-base-100 shadow-xl flex flex-col items-center p-6">
                 <div class="w-full h-52 bg-[#1111110D] rounded-lg flex flex-col items-center justify-center p-8"> 
-                  <img src="image/furniture-3.png" alt=""/>
+                  <img src="Tennis Racket (Pro Series).jpg" alt=""/>
                 </div>
                   <div class="card-body flex flex-col items-center gap-4">
                     <div class="rating">
@@ -243,9 +243,9 @@
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
                     </div>
-                    <h2 class="card-title" id="flexible-sofa">Flexible Sofa</h2>
-                    <p class="text-gray-400 text-lg" id="flexible-sofa-price"><span>339.00</span> TK</p>
-                    <button id="furniture-card-three" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold">Buy Now</button>
+                    <h2 class="card-title" id="flexible-sofa">Tennis Racket (Pro Series)</h2>
+                    <p class="text-gray-400 text-lg" id="flexible-sofa-price"><span>BDT 3,500</span> TK</p>
+                    <button id="furniture-card-three" class="bg-red-500 text-white px-3 py-2.5 text-lg hover:bg-red-600 rounded font-semibold" onclick="AddItem('Tennis Racket (Pro Series)', 3500)">Buy Now</button>
                   </div>
                 </div>
             </div>
@@ -258,7 +258,7 @@
             <h3 class="font-medium text-lg mb-4">Have coupon?</h3>
             <div class="relative">
               <input type="text" placeholder="Coupon code" class="input input-bordered w-full pr-12" id="coupon-code" /> 
-              <button class="btn btn-primary absolute top-0 right-0 rounded-l-none border-[#E527B2] bg-[#E527B2] hover:bg-[#fc4acd] hover:border-[#fc4acd] text-white text-lg" id="coupon-button">Apply</button>
+              <button class="btn btn-primary absolute top-0 right-0 rounded-l-none border-[#e52727] bg-[#e52727] hover:bg-[#fc4a4a] hover:border-[#fc4a4a] text-white text-lg" id="coupon-button">Apply</button>
             </div>
           </div>
           <!-- Cart Item -->
@@ -274,12 +274,12 @@
                 </div>
                 <hr class="border-1 border-[#1212] w-full" />
               </div>
-              <button class="btn btn-primary border-[#E527B2] bg-[#E527B2] hover:bg-[#fc4acd] hover:border-[#fc4acd] text-white w-full text-lg" onclick="my_modal_1.showModal()" id="purchase-button">Make Purchase</button>
+              <button class="btn btn-primary border-[#e52727] bg-[#e52727] hover:bg-[#fc4a4a] hover:border-[#fc4a4a] text-white w-full text-lg" onclick="my_modal_1.showModal()" id="purchase-button">Make Purchase</button>
               <dialog id="my_modal_1" class="modal">
                 <form method="dialog" class="modal-box">
                   <div>
                     <a class="mx-3 my-5 flex justify-center h-50 overflow-hidden rounded-xl" href="#">
-                      <img class="object-cover" src="image/success.png" alt="" />
+                      <img class="object-cover" src="Success.jpg" alt="" />
                     </a>
                     <div class="mt-4 px-5 pb-5 flex flex-col items-center justify-between gap-6">
                       <div class="mt-5">
@@ -287,7 +287,7 @@
                       </div>
                       <p>You purchase the product</p>
                       <div class="modal-action">
-                        <button class="btn btn-primary border-[#E527B2] bg-[#E527B2] hover:bg-[#fc4acd] hover:border-[#fc4acd] text-white" id="back-home">Go Home</button>
+                        <button class="btn btn-primary border-[#e52727] bg-[#e52727] hover:bg-[#fc4a4a] hover:border-[#fc4a4a] text-white" id="back-home">Go Home</button>
                       </div>
                   </div>
                 </form>
