@@ -21,6 +21,7 @@ copyDiscountCoupon.addEventListener('click', function(){
  const discountElement = document.getElementById('total-discount');
  const finalPriceElement = document.getElementById('price-after-discount');
  const cartItemContainer = document.getElementById('cart-item');
+ const couponCodeInput = document.getElementById('coupon-code')
 
  let itemList = [];
  let totalPrice = 0;
@@ -53,16 +54,27 @@ copyDiscountCoupon.addEventListener('click', function(){
     couponButton.disabled = totalPrice  < 3000;
     renderList()
  }
- function renderList(){
-    output.innerHTML = '';
-    itemList.forEach((item,index) => {
-        output.innerHTML += `
-        <div class=" flex items-center justify-between"> 
-        <span>${index + 1}. ${item.name}</span>
-        <span> 
-        <i onclick="removeItem(${index}) class=" fa-solid" ">
-        </i>
-        </span>
-        </div>`
-    })
+ 
+ function renderList() {
+   cartItemContainer.innerHTML = '';
+   itemList.forEach((item,index) => {
+cartItemContainer.innerHTML += `
+     <div class= " flex items-center justify-between">
+     <span>${index + 1}.${item.name}</span>
+     <span>
+     <i onclick= "removeItem(${index})" class= " fa-solid fa-close text-red-600 text-xl font-semibold mt-1 cursor-pointer"> </i>
+     </span>
+     </div>`
+
+});
  }
+
+couponButton.addEventListener('click' , ()  => {
+   const couponCode = couponCodeInput.value.trim();
+   if(couponCode=== "SELL500" && totalPrice >= 3000) {
+      discount = totalPrice * 0.5;
+   } else{
+      discount = 0;
+   }
+   updatePrice();
+})
